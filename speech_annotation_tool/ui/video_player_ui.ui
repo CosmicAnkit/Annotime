@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VideoPlayerWidget</class>
+ <widget class="QWidget" name="VideoPlayerWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>629</width>
+    <height>448</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>8</number>
+   </property>
+   <property name="leftMargin">
+    <number>5</number>
+   </property>
+   <property name="topMargin">
+    <number>5</number>
+   </property>
+   <property name="rightMargin">
+    <number>5</number>
+   </property>
+   <property name="bottomMargin">
+    <number>5</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="videoWidget">
+     <property name="styleSheet">
+      <string notr="true">background-color: black; border: 1px solid #777;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="timelineLayout">
+     <property name="spacing">
+      <number>5</number>
+     </property>
+     <item>
+      <widget class="QSlider" name="timelineSlider">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="timeLabel">
+       <property name="styleSheet">
+        <string notr="true">QLabel#timeLabel {
+                font-size: 10pt;
+                color: #555;
+                margin-left: 5px;
+                margin-right: 5px;
+            }</string>
+       </property>
+       <property name="text">
+        <string>00:00:00.000 / 00:00:00.000</string>
+       </property>
+       <property name="objectName">
+        <string notr="true">timeLabel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="controlsLayout">
+     <property name="spacing">
+      <number>10</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="loadButton">
+       <property name="toolTip">
+        <string>Load Video File</string>
+       </property>
+       <property name="text">
+        <string>Load Video</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="playPauseButton">
+       <property name="toolTip">
+        <string>Play / Pause</string>
+       </property>
+       <property name="text">
+        <string>Play/Pause</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="stopButton">
+       <property name="toolTip">
+        <string>Stop</string>
+       </property>
+       <property name="text">
+        <string>Stop</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="speedCombo">
+       <property name="toolTip">
+        <string>Playback Speed</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>0.5x</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>1.0x</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>1.5x</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>2.0x</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="volumeLayout">
+       <property name="spacing">
+        <number>3</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="volumeDownButton">
+         <property name="toolTip">
+          <string>Decrease Volume</string>
+         </property>
+         <property name="text">
+          <string>Vol-</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="volumeSlider">
+         <property name="toolTip">
+          <string>Volume</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="maximumWidth">
+          <number>80</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="volumeUpButton">
+         <property name="toolTip">
+          <string>Increase Volume</string>
+         </property>
+         <property name="text">
+          <string>Vol+</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="muteButton">
+         <property name="toolTip">
+          <string>Mute / Unmute</string>
+         </property>
+         <property name="text">
+          <string>Mute</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
