@@ -1,0 +1,23 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# PyInstaller build output
+build/
+*.spec
+*.toc
+*.zip
+*.pkg
+*.pyz
+*.txt
+*.html
+
+# Icon and binary files
+generated-*.ico
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Local Python cache
+localpycs/
